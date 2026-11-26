@@ -23,7 +23,7 @@ ChatGPT で文字（`<html>` から始まる文）が返ってきた時は、メ
 ## スキルとして登録する方法（使い慣れている方向け）
 
 ### Claude（claude.ai）
-1. このリンクを押すと、スキルのファイル（slide-design.zip）が保存されます[slide-design.zip をダウンロード](https://github.com/takeuchitsubasa-ops/slide-design-skill/raw/main/slide-design.zip)
+1. このリンクを押すと、スキルのファイル（slide-design.zip）が保存されます：[slide-design.zip をダウンロード](https://github.com/takeuchitsubasa-ops/slide-design-skill/raw/main/slide-design.zip)
 2. claude.ai の「設定」→「機能」→「スキル」で「アップロード」を押し、保存した zip を選びます
 3. 新しいチャットで「この原稿でスライドを作って」と原稿を貼ります
 
