@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>採用説明会</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#151925; --gray:#4C4F54;
+  --brand-dark:#08606B; --brand-light:#2AB5A5; --brand:#198A88;
+  --grad:linear-gradient(90deg,#08606B,#2AB5A5);
+  --text-shadow:6.76px 14.5px 7px rgba(2,25,91,0.09);
+  --card-shadow:3.54px 3.54px 10px rgba(43,43,43,0.1), 0 6px 14px rgba(2,25,91,0.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#d5dae1;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700;color:var(--ink);padding:40px 0}
+.slide{position:relative;width:1280px;height:720px;margin:0 auto 40px;overflow:hidden;background:#ffffff;line-height:1.4}
+.slide.alt{background:#f1f5f9}
+.flex{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.abs{position:absolute}
+.c{text-align:center;padding-left:.1em}
+.ts{text-shadow:var(--text-shadow)}
+.gl{display:block;width:fit-content;margin:0 auto;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(var(--text-shadow))}
+.num{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:-0.05em}
+.brand{color:var(--brand)}
+.h{letter-spacing:.10em}
+.b{letter-spacing:.02em}
+
+/* 1 表紙 */
+.s1 .label{font-size:28px;letter-spacing:.10em;line-height:1.4;margin-bottom:28px}
+.s1 .title{font-size:64px;letter-spacing:.10em;line-height:1.4}
+.s1 .sub{font-size:20px;color:var(--gray);letter-spacing:.02em;margin-top:56px}
+/* 2 字だけ1文 */
+.s2 .t{font-size:48px;letter-spacing:.10em;line-height:2.0}
+/* 3 前置き＋主役 */
+.s3 .pre{font-size:32px;letter-spacing:.10em;line-height:1.4;margin-bottom:34px}
+.s3 .main{font-size:64px;letter-spacing:.10em;line-height:1.4}
+/* 4 番号つき3項目 */
+.s4 .ttl{left:0;width:1280px;top:77px;font-size:48px;line-height:1.4}
+.s4 .row{position:absolute;left:0;width:1280px;height:120px}
+.s4 .n{position:absolute;left:400px;color:var(--brand);top:0;width:70px;font-size:60px;line-height:120px}
+.s4 .it{position:absolute;left:494px;top:0;height:120px;display:flex;flex-direction:column;justify-content:center}
+.s4 .it .a{font-size:32px;letter-spacing:.10em;line-height:1.4}
+.s4 .it .p{font-size:24px;color:var(--gray);letter-spacing:.02em;line-height:1.4;margin-top:4px}
+.s4 .it .p .num{font-size:28px}
+/* 5 施工前後 */
+.s5 .tag{position:absolute;top:86px;height:40px;padding:0 22px;border-radius:12px;font-size:20px;line-height:40px;color:#fff;letter-spacing:.02em}
+.s5 .ph{position:absolute;top:142px;width:570px;height:385px;background:#fff;border:2px solid rgba(76,79,84,.25);border-radius:12px;box-shadow:var(--card-shadow);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--gray);letter-spacing:.02em}
+.s5 .ph img{width:100%;height:100%;object-fit:contain;border-radius:10px;display:block}
+.s5 .cap{position:absolute;left:0;width:1280px;top:572px;text-align:center;font-size:28px;letter-spacing:.02em;line-height:1.4}
+.s5 .cap .n2{font-family:'DM Sans',sans-serif;font-size:32px;letter-spacing:-0.05em}
+.s5 .cap .big{font-size:40px;color:var(--brand);line-height:1}
+.s5 .cap .big .num{letter-spacing:-0.05em}
+/* 6 FAQ */
+.s6 .rule{left:195px;top:196px;width:88px;height:4px;background:var(--gray);opacity:.5}
+.s6 .badge{position:absolute;left:195px;width:56px;height:44px;border-radius:12px;color:#fff;font-size:20px;line-height:44px;text-align:center;font-family:'DM Sans',sans-serif}
+.s6 .q{left:283px;top:232px;font-size:40px;letter-spacing:.10em;line-height:1.4}
+.s6 .a1{left:283px;top:344px;font-size:56px;letter-spacing:.10em;line-height:1.4}
+.s6 .a2{left:283px;top:436px;font-size:28px;letter-spacing:.02em;line-height:1.4}
+@page{size:1280px 720px;margin:0}
+@media print{
+  body{background:none;padding:0}
+  .slide{margin:0;break-after:page;page-break-after:always}
+  .slide:last-child{break-after:auto;page-break-after:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- 1 表紙 -->
+<section class="slide s1 flex">
+  <div class="label c ts">採用説明会</div>
+  <div class="title"><span class="gl c">解体と<span style="font-feature-settings:'hwid' 1">、</span>暮らしの困りごとを<span style="font-feature-settings:'hwid' 1">、</span></span><span class="gl c">まるごと引き受ける会社</span></div>
+  <div class="sub c">福島県いわき市｜解体工事・便利屋・遺品整理</div>
+</section>
+
+<!-- 2 字だけ1文 -->
+<section class="slide s2 flex">
+  <div class="t c ts">私たちの資産は「<span class="brand">人</span>」です<span style="font-feature-settings:'hwid' 1">。</span></div>
+</section>
+
+<!-- 3 前置き＋主役（山場） -->
+<section class="slide s3 flex">
+  <div class="pre c ts">人には向き不向きがある<span style="font-feature-settings:'hwid' 1">。</span></div>
+  <div class="main"><span class="gl c">だから<span style="font-feature-settings:'hwid' 1">、</span>一人ひとりの強みを見て</span><span class="gl c">仕事を任せます<span style="font-feature-settings:'hwid' 1">。</span></span></div>
+</section>
+
+<!-- 4 番号つき3項目 -->
+<section class="slide s4">
+  <div class="abs ttl c h ts">入社してからの流れ</div>
+  <div class="row" style="top:222px">
+    <div class="n num">1</div>
+    <div class="it"><div class="a ts">先輩と現場に出る</div><div class="p"><span class="num">1</span>か月</div></div>
+  </div>
+  <div class="row" style="top:382px">
+    <div class="n num">2</div>
+    <div class="it"><div class="a ts">小さな現場を任せる</div><div class="p"><span class="num">3</span>か月〜</div></div>
+  </div>
+  <div class="row" style="top:542px">
+    <div class="n num">3</div>
+    <div class="it"><div class="a ts">現場のリーダーになる</div><div class="p"><span class="num">1</span>年〜</div></div>
+  </div>
+</section>
+
+<!-- 5 施工前と施工後 -->
+<section class="slide s5 alt">
+  <div class="tag" style="left:50px;background:var(--gray)">施工前</div>
+  <div class="tag" style="left:660px;background:var(--brand)">施工後</div>
+  <div class="ph" style="left:50px"><img src="img/before.jpg" alt="施工前"></div>
+  <div class="ph" style="left:660px"><img src="img/after.jpg" alt="施工後"></div>
+  <div class="cap ts">木造<span class="n2">2</span>階建ての解体　工期<span class="big"><span class="num">5</span>日</span></div>
+</section>
+
+<!-- 6 よくある質問 -->
+<section class="slide s6">
+  <div class="abs rule"></div>
+  <div class="badge" style="top:246px;background:var(--gray)">Q</div>
+  <div class="abs q ts">未経験でも大丈夫？</div>
+  <div class="badge" style="top:361px;background:var(--brand)">A</div>
+  <div class="abs a1 ts"><span class="brand">大丈夫</span>です<span style="font-feature-settings:'hwid' 1">。</span></div>
+  <div class="abs a2">入社した人の半分は未経験です<span style="font-feature-settings:'hwid' 1">。</span></div>
+</section>
+
+</body>
+</html>
